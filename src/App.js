@@ -4,16 +4,18 @@ function App() {
   const [counter, setCounter] = useState(0);
 
   const increment = () => {
-    //  Bug: state is not updated using setCounter
-    counter += 1;
-  };
+  setCounter(counter + 1); // correct way to update state
+};
 
-  return (
+     return (
     <div>
       <h1>Counter: {counter}</h1>
       <button onClick={increment}>Increment</button>
     </div>
   );
-}
+};
+
+ 
+
 
 export default App;
