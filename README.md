@@ -6,6 +6,17 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+## Debugging Notes
+
+### Issue
+State was being updated directly (`counter += 1`) and React wasn't re-rendering.
+
+### Fix
+Used `setCounter(counter + 1)` to correctly update state and trigger re-render.
+
+### Tools Used
+- React Developer Tools (Browser Extension)
+
 ### `npm start`
 
 Runs the app in the development mode.\
